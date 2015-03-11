@@ -7,5 +7,7 @@ do
 	echo "processing node: $thisnode"
 #ssh $thisnode 'mkdir -p /scratch/lfang/hadoop26'
 #ssh $thisnode 'mkdir -p /scratch/lfang/hadoop_gc_logs'
-	ssh $thisnode 'chmod 700 /scratch/lfang'
+#	ssh $thisnode 'chmod 700 /scratch/lfang'
+	ssh $thisnode 'mkdir -p /scratch/lfang/hadoop_user_tmp'
+
 done
